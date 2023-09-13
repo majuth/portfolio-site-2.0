@@ -1,6 +1,6 @@
 
 function Header() {
-    return <h2>Header</h2>;
+    return <h4>LOGO</h4>;
 }
 
 export default Header;

@@ -1,6 +1,7 @@
 
 function Title() {
-    return <h2>Title</h2>;
+    return <h1>Hi My Name is: <br/> Majuth Kirakalaprathapan</h1>;
+
 }
 
 export default Title;
