@@ -1,6 +1,29 @@
+@font-face {
+    font-family: "Google Sans";
+    src: local("Google Sans Medium"), local("GoogleSans-Medium"),
+        url("fonts/GoogleSans-Medium.woff2") format("woff2"),
+        url("fonts/GoogleSans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Google Sans";
+    src: local("Google Sans Bold"), local("GoogleSans-Bold"),
+        url("fonts/GoogleSans-Bold.woff2") format("woff2"),
+        url("fonts/GoogleSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
     scroll-behavior: smooth;
     background-color: black;
+    /*CHANGE THIS STUFF TO IN COMPONENT STYLING*/
+    color: white;
+    font-family: "Google sans";
 }
 
 ::-webkit-scrollbar {
@@ -22,3 +45,4 @@ html {
 ::-webkit-scrollbar-thumb:hover { 
     background: rgba(112,0,255,1);
 }
+
