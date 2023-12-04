@@ -49,3 +49,7 @@ html {
 ::-webkit-scrollbar-thumb:hover { 
     background: rgba(112,0,255,1);
 }
+
+.progress-bar{
+    height: 0.2rem;
+}
