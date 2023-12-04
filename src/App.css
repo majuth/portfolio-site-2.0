@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: "Google Sans";
     src: local("Google Sans Medium"), local("GoogleSans-Medium"),
