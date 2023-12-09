@@ -14,8 +14,8 @@ function App() {
     <div className="App">
       <ProgressBar/>
       <header className="App-header">
-        
         <Header/>
+      </header>
         <br />
         <br />
         <br />
@@ -199,7 +199,6 @@ function App() {
         <br />
         <br />
         <br />
-      </header>
     </div>
   );
 }
