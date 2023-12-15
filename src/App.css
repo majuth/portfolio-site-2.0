@@ -24,7 +24,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: white;
+    @apply bg-slate-950;
     /*CHANGE THIS STUFF TO IN COMPONENT STYLING*/
     color: white;
     font-family: "Google sans";
@@ -53,3 +53,7 @@ html {
 .progress-bar{
     height: 0.2rem;
 }
+
+.section-container {
+    @apply 2xl:container xl:px-20 md:px-12 px-4 mx-auto;
+  }

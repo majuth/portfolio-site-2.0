@@ -6,7 +6,7 @@ const ProgressBar = () => {
     return(
     <span 
         style={{ transform: `translateX(${completion-100}%)` }}
-        className="fixed bg-white w-full top-0 progress-bar"
+        className="fixed bg-white w-full top-0 z-50 progress-bar"
     />
     )
 }
