@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Menu from "../common/menu";
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +13,11 @@ function Header() {
             <nav className={` ${isMenuOpen ? "menu-visible" : ""}`}>
             <button 
                 className="w-6 h-6 flex items-center justify-center link relative"
-                onClick={setIsMenuOpen.bind(null, !isMenuOpen)}    
+                onClick={setIsMenuOpen.bind(null, !isMenuOpen)}
             >
-                <div className="relative flex-none w-full bg-white duration-300 flex items-center justify-center"></div>
+                <div className="relative flex-none w-full bg-white duration-300 flex items-center justify-center">.</div>
             </button>
+            <Menu isMenuOpen= {isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             </nav>
         </div>
     </header>
