@@ -27,6 +27,7 @@ const Menu = ({isMenuOpen, setIsMenuOpen}) => {
                 </a>
               </li>
             ))}
+            <a onClick={setIsMenuOpen.bind(null, false)} href="#"><li >X</li></a>
           </ul>
         </div>
       </div>

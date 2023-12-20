@@ -10,14 +10,14 @@ function Header() {
             <a href="#home" className="link">
                 <img src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>👨‍💻</text></svg>" width={25} height={25} alt="Logo - Majuth"/>
             </a>
-            <nav className="nav-menu">
+            <nav>
             <button 
                 className={`w-6 h-6 flex items-center justify-center link relative ${isMenuOpen ? "menu-button-close" : "menu-button-open"}`}
                 onClick={setIsMenuOpen.bind(null, !isMenuOpen)}
             >
                 <div className="relative flex-none w-full bg-white duration-300 flex items-center justify-center">.</div>
             </button>
-            <Menu isMenuOpen= {isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             </nav>
         </div>
     </header>
