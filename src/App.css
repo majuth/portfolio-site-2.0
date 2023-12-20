@@ -60,8 +60,28 @@ html {
 
 .menu-visible{
     visibility: visible;
+    opacity:1;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
 }
 
 .menu-hidden{
     visibility: hidden;
+    opacity: 0;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
 }
+
+.menu-button-open{
+    opacity: 1;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.menu-button-close{
+    opacity: 1;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.menu{
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
+    
+} 
