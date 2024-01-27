@@ -24,7 +24,8 @@
 
 html {
     scroll-behavior: smooth;
-    @apply bg-slate-950;
+    /* @apply bg-slate-950; */
+    @apply bg-gray-900;
     /*CHANGE THIS STUFF TO IN COMPONENT STYLING*/
     color: white;
     font-family: "Google sans";
@@ -39,7 +40,8 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(112,0,255,.75);
+    /* background: rgba(112,0,255,.75); */
+    background: rgba(59,130,246,.75);
     opacity: .5;
     border-radius: 1rem;
     -webkit-transition: all .2s;
@@ -47,7 +49,8 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover { 
-    background: rgba(112,0,255,1);
+    /* background: rgba(112,0,255,1); */
+    background: rgba(59,130,246,1);
 }
 
 .progress-bar{
