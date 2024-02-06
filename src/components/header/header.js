@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Menu from "../common/menu";
+import hamburger from "../../img/burger-menu.svg"
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,8 @@ function Header() {
                 className={`w-6 h-6 flex items-center justify-center link relative ${isMenuOpen ? "menu-button-close" : "menu-button-open"}`}
                 onClick={setIsMenuOpen.bind(null, !isMenuOpen)}
             >
-                <div className="relative flex-none w-full bg-white duration-300 flex items-center justify-center">.</div>
+                {/* <div className="relative flex-none w-full bg-white duration-300 flex items-center justify-center">.</div> */}
+                <img src={hamburger}width={25} height={25}></img>
             </button>
             <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             </nav>
