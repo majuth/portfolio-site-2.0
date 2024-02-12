@@ -27,6 +27,15 @@ const Menu = ({isMenuOpen, setIsMenuOpen}) => {
                 </a>
               </li>
             ))}
+
+            <li><a
+                  className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
+                  href={``}
+                  onClick={setIsMenuOpen.bind(null, false)}
+                  >
+                    x
+                </a>
+            </li>
           </ul>
         </div>
       </div>
