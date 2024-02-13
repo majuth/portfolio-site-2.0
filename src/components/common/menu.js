@@ -30,7 +30,7 @@ const Menu = ({isMenuOpen, setIsMenuOpen}) => {
 
             <li><a
                   className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
-                  href={``}
+                  href={`javascript:void(0)`}
                   onClick={setIsMenuOpen.bind(null, false)}
                   >
                     x
