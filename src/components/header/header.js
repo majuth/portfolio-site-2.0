@@ -17,7 +17,7 @@ function Header() {
                 onClick={setIsMenuOpen.bind(null, !isMenuOpen)}
             >
                 {/* <div className="relative flex-none w-full bg-white duration-300 flex items-center justify-center">.</div> */}
-                <img src={hamburger}width={25} height={25}></img>
+                <img className={'items-center justify-center'} src={hamburger}></img>
             </button>
             <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             </nav>
