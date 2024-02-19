@@ -59,16 +59,18 @@ html {
 
 ::-webkit-scrollbar-thumb {
     /* background: rgba(112,0,255,.75); */
-    background: rgba(59,130,246,.75);
+    /* background: rgba(59,130,246,.75); */
+    /* background: #2193b0; */
+    background: white;
     opacity: .5;
     border-radius: 1rem;
-    -webkit-transition: all .2s;
-    transition: all .2s;
 }
 
 ::-webkit-scrollbar-thumb:hover { 
     /* background: rgba(112,0,255,1); */
-    background: rgba(59,130,246,1);
+    /* background: rgba(59,130,246,1); */
+    /* background: #6dd5ed; */
+    background: linear-gradient(0deg,#6dd5ed,#2193b0);
 }
 
 .progress-bar{
