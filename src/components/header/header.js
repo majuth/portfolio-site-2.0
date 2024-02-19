@@ -13,7 +13,7 @@ function Header() {
             </a>
             <nav>
             <button 
-                className={`w-6 h-6 flex items-center justify-center link relative ${isMenuOpen ? "menu-button-close" : "menu-button-open"}`}
+                className={`w-6 h-6 flex items-center justify-center link relative`}
                 onClick={setIsMenuOpen.bind(null, !isMenuOpen)}
             >
                 {/* <div className="relative flex-none w-full bg-white duration-300 flex items-center justify-center">.</div> */}

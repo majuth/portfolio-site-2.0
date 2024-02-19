@@ -31,22 +31,20 @@ html {
     font-family: "Google sans";
 
     @media (min-width: 768px) {
-        font-size: 14px;
-      }
-    
-      @media (min-width: 1024px) {
-        font-size: 15px;
-      }
-    
-      @media (min-width: 1536px) {
-        font-size: 18px;
-      }
-      @media (min-width: 1800px) {
-        font-size: 20px;
-      }
-      @media (min-width: 2000px) {
-        font-size: 22px;
-      }
+    font-size: 14px;
+    }
+    @media (min-width: 1024px) {
+    font-size: 15px;
+    }
+    @media (min-width: 1536px) {
+    font-size: 18px;
+    }
+    @media (min-width: 1800px) {
+    font-size: 20px;
+    }
+    @media (min-width: 2000px) {
+    font-size: 22px;
+    }
 }
 
 ::-webkit-scrollbar {
@@ -62,7 +60,6 @@ html {
     /* background: rgba(59,130,246,.75); */
     /* background: #2193b0; */
     background: white;
-    opacity: .5;
     border-radius: 1rem;
 }
 
@@ -90,16 +87,6 @@ html {
 .menu-hidden{
     visibility: hidden;
     opacity: 0;
-    transition:visibility 0.3s linear,opacity 0.3s linear;
-}
-
-.menu-button-open{
-    opacity: 1;
-    transition:visibility 0.3s linear,opacity 0.3s linear;
-}
-
-.menu-button-close{
-    opacity: 1;
     transition:visibility 0.3s linear,opacity 0.3s linear;
 }
 
