@@ -14,7 +14,7 @@ const Menu = ({isMenuOpen, setIsMenuOpen}) => {
           >
             {MENU.map((menu) => (
               <li
-                className="p-0 m-6 text-2xl block"
+                className="p-0 m-6 text-2xl block text-gradient-transition"
                 key={menu.name}
                 role="menuitem"
               >
@@ -28,7 +28,8 @@ const Menu = ({isMenuOpen, setIsMenuOpen}) => {
               </li>
             ))}
 
-            <li><a
+            <li className='text-gradient-transition'>
+              <a
                   className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
                   href={`javascript:void(0)`}
                   onClick={setIsMenuOpen.bind(null, false)}
