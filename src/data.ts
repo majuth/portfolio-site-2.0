@@ -24,3 +24,10 @@ export const MENU = [
       ref: "contact",
     },
   ];
+
+export const TYPEDTITLE = [
+    "I am an aspiring Software Engineer",
+    "I build modern and user friendly apps",
+    "I am an aspiring professional",
+    "I am an aspiring Computer Scientist"
+];
