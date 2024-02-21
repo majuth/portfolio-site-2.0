@@ -18,5 +18,9 @@ export const MENU = [
     {
       name: "Experience",
       ref: "experience",
-    },,
+    },
+    {
+      name: "Contact",
+      ref: "contact",
+    },
   ];
