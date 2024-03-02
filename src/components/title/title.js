@@ -1,6 +1,9 @@
 
 function Title() {
-    return <h1 id="home">Hi My Name is: <br/> Majuth Kira</h1>;
+    return <div id="home">
+        <h1> Hello 👋🏻 </h1>
+        <h1> I am Majuth Kirakalaprathapan </h1>
+    </div>;
 
 }
 
