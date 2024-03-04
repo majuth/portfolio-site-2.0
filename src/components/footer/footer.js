@@ -1,6 +1,8 @@
 
 function Footer() {
-    return <h2>Developed by Majuth Kirakalaprathapan</h2>;
+    return <section className="section-container">
+        <h2>Developed by Majuth Kirakalaprathapan</h2>;
+    </section>
 }
 
 export default Footer;

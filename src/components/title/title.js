@@ -1,11 +1,10 @@
 
 function Title() {
-    return <div id="home">
+    return <section id="home" className="rounded-3xl relative p-6 flex-col flex justify-between max-w-full section-container">
         <h1> Hello 👋🏻 </h1>
-        <h1> I am Majuth Kirakalaprathapan </h1>
-    </div>;
+        <h1> I am Majuth Kira </h1>
+    </section>;
 
 }
 
 export default Title;
-  
