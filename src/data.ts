@@ -31,3 +31,11 @@ export const TYPEDTITLE = [
     "I am an aspiring professional",
     "I am an aspiring Computer Scientist"
 ];
+
+export const SOCIAL_LINKS = {
+  linkedin: "https://www.linkedin.com/in/majuth/",
+  github: "https://github.com/majuth",
+  instagram: "https://www.instagram.com/majuthkira/",
+  facebook: "https://www.facebook.com/majuth.kirakalaprathapan/",
+  twitter: "https://twitter.com/majuthkira",
+}
