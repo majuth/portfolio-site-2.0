@@ -21,20 +21,19 @@ function Title() {
     }, []);
 
     function renderSocialLinks(){
-        return () =>{
-        Object.keys(SOCIAL_LINKS).map((SOCIAL_LINK, el) => (
-        <a
-            href={SOCIAL_LINKS[el]}
-            key={el}
-            className={SOCIAL_LINK}
-            rel="noreferrer"
-            target="_blank"
-        >
-            <img src={`"../../img/socials/${el}.svg`} alt={el} width={40} height={40} />
-        </a>
-        
-        ))
-    }
+        return (
+            Object.keys(SOCIAL_LINKS).map((el, SOCIAL_LINK) => (
+                <a
+                    href={SOCIAL_LINKS[el]}
+                    key={el}
+                    className="link hover:opacity-80 duration-300 md:mr-4 mr-2"
+                    rel="noreferrer"
+                    target="_blank"
+                >
+                    <img src={`/img/socials/${el}.svg`} alt={el} width={40} height={40} />
+                </a>
+            ))
+        );
     };
 
     return <section id="home" className="w-full flex md:items-center py-8 section-container min-h-screen relative mb-24">
@@ -46,7 +45,7 @@ function Title() {
         <p className="mb-4 text-xl sm:text-2xl md:text-4xl seq">
             <span ref={typedTitle} />
         </p>
-        <div className="flex seq">{renderSocialLinks()}</div>
+        <div className="flex seq mb-5">{renderSocialLinks()}</div>
     </div>
     </section>; 
 
