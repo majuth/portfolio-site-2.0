@@ -1,5 +1,5 @@
 import React from "react";
-import { TYPEDTITLE } from "../../data.ts";
+import { TYPEDTITLE, SOCIAL_LINKS } from "../../data.ts";
 import Typed from "typed.js";
 
 function Title() {
@@ -20,6 +20,23 @@ function Title() {
         };
     }, []);
 
+    function renderSocialLinks(){
+        return () =>{
+        Object.keys(SOCIAL_LINKS).map((SOCIAL_LINK, el) => (
+        <a
+            href={SOCIAL_LINKS[el]}
+            key={el}
+            className={SOCIAL_LINK}
+            rel="noreferrer"
+            target="_blank"
+        >
+            <img src={`"../../img/socials/${el}.svg`} alt={el} width={40} height={40} />
+        </a>
+        
+        ))
+    }
+    };
+
     return <section id="home" className="w-full flex md:items-center py-8 section-container min-h-screen relative mb-24">
     <div className="font-medium flex flex-col pt-32 md:pt-0 select-none">
         <div className="md:mb-4 mb-2">
@@ -29,7 +46,7 @@ function Title() {
         <p className="mb-4 text-xl sm:text-2xl md:text-4xl seq">
             <span ref={typedTitle} />
         </p>
-        <div className="flex seq">socials</div>
+        <div className="flex seq">{renderSocialLinks()}</div>
     </div>
     </section>; 
 
