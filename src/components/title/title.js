@@ -54,7 +54,7 @@ function Title() {
         <p className="mb-4 text-xl sm:text-2xl md:text-4xl seq">
             <span ref={typedTitle} />
         </p>
-        <div className="flex seq mb-5">{renderSocialLinks()}</div>
+        <div className="flex seq">{renderSocialLinks()}</div>
     </div>
     {renderBackgound()}
     </section> 
