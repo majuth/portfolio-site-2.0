@@ -1,6 +1,7 @@
 import React from "react";
 import { TYPEDTITLE, SOCIAL_LINKS } from "../../data.ts";
 import Typed from "typed.js";
+import BackgroundImage from "./backgroundImage.js";
 
 function Title() {
     const typedTitle = React.useRef(null);
@@ -34,7 +35,15 @@ function Title() {
                 </a>
             ))
         );
-    };
+    }
+
+    function renderBackgound(){
+        return(
+            <div className="absolute hero-bg right-0 md:bottom-0 bottom-8 -z-10 md:w-3/4 w-full scale-125 sm:scale-100 flex items-end" style={{maxHeight: "650px"}}>
+                <BackgroundImage />
+            </div>
+        );
+    }
 
     return <section id="home" className="w-full flex md:items-center py-8 section-container min-h-screen relative mb-24">
     <div className="font-medium flex flex-col pt-32 md:pt-0 select-none">
@@ -47,7 +56,8 @@ function Title() {
         </p>
         <div className="flex seq mb-5">{renderSocialLinks()}</div>
     </div>
-    </section>; 
+    {renderBackgound()}
+    </section> 
 
 }
 
