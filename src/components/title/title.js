@@ -1,10 +1,12 @@
 import React from "react";
 import { TYPEDTITLE, SOCIAL_LINKS } from "../../data.ts";
+import { gsap, Linear } from "gsap";
 import Typed from "typed.js";
 import BackgroundImage from "./backgroundImage.js";
 
 function Title() {
     const typedTitle = React.useRef(null);
+    const targetSection = React.useRef(null);
 
     React.useEffect(() => {
         const typed = new Typed(typedTitle.current, {
@@ -15,11 +17,27 @@ function Title() {
             loop: true,
         });
 
+        const initRevealAnimation = (targetSection) =>{
+            const revealTarget = gsap.timeline({defaults: {ease: Linear.easeNone,}});
+            
+            revealTarget
+                .fromTo(targetSection.current, { opacity: 0 }, { opacity: 1, duration: 2 })
+                .fromTo(
+                    targetSection.current.querySelectorAll(".seq"),
+                    {opacity: 0,},
+                    {opacity: 1, duration: 0.5, stagger: 0.5},
+                    "<"
+                );
+            return revealTarget;
+        }
+
+        initRevealAnimation(targetSection);
+
         return () => {
             // Destroy Typed instance during cleanup to stop animation
             typed.destroy();
         };
-    }, []);
+    }, [targetSection]);
 
     function renderSocialLinks(){
         return (
@@ -45,7 +63,7 @@ function Title() {
         );
     }
 
-    return <section id="home" className="w-full flex md:items-center py-8 section-container min-h-screen relative mb-24">
+    return <section id="home" className="w-full flex md:items-center py-8 section-container min-h-screen relative mb-24" ref={targetSection} style={{opacity: 0}}>
     <div className="font-medium flex flex-col pt-32 md:pt-0 select-none">
         <div className="md:mb-4 mb-2">
             <h2 className="text-4xl seq"> Hello 👋🏻 </h2>
@@ -55,8 +73,8 @@ function Title() {
             <span ref={typedTitle} />
         </p>
         <div className="flex seq">{renderSocialLinks()}</div>
+        <div>{renderBackgound()}</div>
     </div>
-    {renderBackgound()}
     </section> 
 
 }
