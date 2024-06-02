@@ -1,9 +1,18 @@
+import { gsap, Linear, ScrollTrigger } from "gsap/all";
+import React from "react";
 
 function Description() {
-    return <section className="section-container"> 
-        <h2>
-        My name is Majuth and I am a recent grad from Toronto Metropolitan University's (formerly known as Ryerson) Computer Science Co-op program and am currently interested in learning about the many specifications in the technological industry! Feel free to reach out!
-        </h2>
+    const targetSection = React.useRef(null);
+    const descrpRef = React.useRef(null);
+
+    function renderDescription() {
+        return <h1 ref={descrpRef} className="font-medium text-3xl sm:text-4xl md:text-6xl">
+            I am a recent grad from Toronto Metropolitan University's Computer Science Co-op program. I am currently interested in learning about the many specifications in the tech industry!
+        </h1>
+    }
+
+    return <section className="tall:pt-20 tall:pb-16 pt-40 pb-24 w-full relative select-none section-container" ref={targetSection}> 
+        {renderDescription()}
     </section>;
 }
 
