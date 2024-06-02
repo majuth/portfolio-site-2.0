@@ -7,7 +7,12 @@ function Description() {
 
     function renderDescription() {
         return <h1 ref={descrpRef} className="font-medium text-3xl sm:text-4xl md:text-6xl">
-            I am a recent grad from Toronto Metropolitan University's Computer Science Co-op program. I am currently interested in learning about the many specifications in the tech industry!
+            <span>
+            I am a recent grad from Toronto Metropolitan University's Computer Science Co-op program.{" "}
+            </span>
+            <span>
+             I am currently interested in learning about the many specifications in the tech industry!
+            </span>
         </h1>
     }
 
