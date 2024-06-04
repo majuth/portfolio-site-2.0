@@ -1,9 +1,11 @@
 import { gsap, Linear, ScrollTrigger } from "gsap/all";
-import React from "react";
+import React, { useState } from "react";
 
 function Description() {
-    const targetSection = React.useRef(null);
     const descrpRef = React.useRef(null);
+    const targetSection = React.useRef(null);
+    
+    const [change, setChange] = useState(false);
 
     function renderDescription() {
         return <h1 ref={descrpRef} className="font-medium text-3xl sm:text-4xl md:text-6xl">
