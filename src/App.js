@@ -8,8 +8,11 @@ import Project from './components/projects/projects';
 import Skills from './components/skills/skills';
 import Title from './components/title/title';
 import ProgressBar from './components/common/progress-bar';
+import { gsap, ScrollTrigger } from 'gsap/all';
 
 function App() {
+  gsap.registerPlugin(ScrollTrigger);
+
   return (
     <div className="App">
       <ProgressBar/>
