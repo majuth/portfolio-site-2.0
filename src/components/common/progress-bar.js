@@ -1,6 +1,6 @@
 import useReadingProgress from "../../hooks/useReadingProgress";
 
-const ProgressBar = () => {
+function ProgressBar() {
     const completion = useReadingProgress();
     
     return(

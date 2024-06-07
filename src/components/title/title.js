@@ -17,7 +17,7 @@ function Title() {
             loop: true,
         });
 
-        const initRevealAnimation = (targetSection) =>{
+        function initRevealAnimation(targetSection) {
             const revealTarget = gsap.timeline({defaults: {ease: Linear.easeNone,}});
             
             revealTarget
@@ -37,7 +37,7 @@ function Title() {
             // Destroy Typed instance during cleanup to stop animation
             typed.destroy();
         };
-    }, [targetSection]);
+    }, []);
 
     function renderSocialLinks(){
         return (

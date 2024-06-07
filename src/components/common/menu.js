@@ -1,7 +1,7 @@
 import React from 'react';
 import { MENU } from '../../data.ts';
 
-const Menu = ({isMenuOpen, setIsMenuOpen}) => {
+function Menu({isMenuOpen, setIsMenuOpen}) {
   return (
     <section
       className={`menu fixed top-0 left-0 w-full h-full overflow-hidden invisible flex items-center justify-center ${isMenuOpen ? "menu-visible" : "menu-hidden"}`}
