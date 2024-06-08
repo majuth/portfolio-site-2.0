@@ -1,5 +1,6 @@
 import { gsap, Linear, ScrollTrigger } from "gsap/all";
 import React, { useEffect, useState } from "react";
+import headShot from "../../img/headshot.jpg";
 
 function Description() {
     const descrpRef = React.useRef(null);
@@ -69,8 +70,9 @@ function Description() {
         </h1>
     }
 
-    return <section className="tall:pt-20 tall:pb-16 pt-40 pb-24 w-full relative select-none section-container" ref={targetSection}> 
-        {renderDescription()}
+    return <section className="tall:pt-20 tall:pb-16 pt-40 pb-24 w-full relative select-none section-container inline-grid grid-cols-5" ref={targetSection}> 
+        <section className="col-span-5 md:col-span-1"><img src={headShot} className="rounded-full md:w-3/4 w-full scale-125 sm:scale-100 flex" style={{maxHeight: "200px", maxWidth: "200px"}} alt={"Majuth Kira Headshot"} width={100} height={100} /></section>
+        <section className="col-span-5 md:col-span-4">{renderDescription()}</section>
     </section>;
 }
 
