@@ -5,6 +5,7 @@ import headShot from "../../img/headshot.jpg";
 function Description() {
     const descrpRef = React.useRef(null);
     const targetSection = React.useRef(null);
+    const headShotRef = React.useRef(null);
     
     const [change, setChange] = useState(false);
 
@@ -46,6 +47,18 @@ function Description() {
         return ScrollTriggerInstance;
     }
 
+    function initHeadshotAnimation(headShotRef, targetSection){
+        const ScrollTriggerInstance = ScrollTrigger.create({
+            trigger: descrpRef.current,
+            start: "top center",
+            end: "center 60%",
+            pin: headShotRef.current,
+            anticipatePin: 0
+        });
+
+        return ScrollTriggerInstance;
+    }
+
     useEffect(() =>{
         const descrpScrollTriggerInstance = initDescrpAnimation(
             descrpRef,
@@ -55,23 +68,36 @@ function Description() {
         return descrpScrollTriggerInstance.kill;
     }, [descrpRef, targetSection]);
 
+    useEffect(() =>{
+        const headShotScrollTriggerInstance = initHeadshotAnimation(
+            headShotRef,
+            targetSection
+        );
+
+        return headShotScrollTriggerInstance.kill;
+    }, [headShotRef, targetSection]);
+
     function renderDescription() {
         return <h1 ref={descrpRef} className="font-medium text-3xl sm:text-4xl md:text-6xl">
             <span 
                 className={`descrp-1 leading-tight`}
             >
-            I am a recent grad from Toronto Metropolitan University's Computer Science Co-op program.{" "}
+                I am a recent grad from Toronto Metropolitan University's Computer Science Co-op program.{" "}
             </span>
             <span
                 className={`descrp-2 leading-tight`}
             >
-             I am currently interested in learning about the many specifications in the tech industry!
+                I am currently interested in learning about the many specifications in the tech industry!
             </span>
         </h1>
     }
 
+    function renderHeadshot(){
+        return <img src={headShot} className="headshot rounded-full md:w-3/4 w-full scale-125 sm:scale-100 flex" ref={headShotRef} style={{maxHeight: "200px", maxWidth: "200px"}} alt={"Majuth Kira Headshot"} width={100} height={100} />
+    }
+
     return <section className="tall:pt-20 tall:pb-16 pt-40 pb-24 w-full relative select-none section-container inline-grid grid-cols-5" ref={targetSection}> 
-        <section className="col-span-5 md:col-span-1"><img src={headShot} className="rounded-full md:w-3/4 w-full scale-125 sm:scale-100 flex" style={{maxHeight: "200px", maxWidth: "200px"}} alt={"Majuth Kira Headshot"} width={100} height={100} /></section>
+        <section className="col-span-5 md:col-span-1">{renderHeadshot()}</section>
         <section className="col-span-5 md:col-span-4">{renderDescription()}</section>
     </section>;
 }
