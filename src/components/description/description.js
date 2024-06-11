@@ -50,8 +50,8 @@ function Description() {
     function initHeadshotAnimation(headShotRef, targetSection){
         const ScrollTriggerInstance = ScrollTrigger.create({
             trigger: descrpRef.current,
-            start: "top center",
-            end: "center 60%",
+            start: "10% center",
+            end: "80% center",
             pin: headShotRef.current,
             anticipatePin: 0
         });
