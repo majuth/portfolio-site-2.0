@@ -3,6 +3,11 @@ import { TYPEDTITLE, SOCIAL_LINKS } from "../../data.ts";
 import { gsap, Linear } from "gsap";
 import Typed from "typed.js";
 import BackgroundImage from "./backgroundImage.js";
+import Facebook from "../../img/socials/facebook.svg"
+import Github from "../../img/socials/github.svg"
+import Instagram from "../../img/socials/instagram.svg"
+import Linkedin from "../../img/socials/linkedin.svg"
+import Twitter from "../../img/socials/twitter.svg"
 
 function Title() {
     const typedTitle = React.useRef(null);
@@ -41,17 +46,53 @@ function Title() {
 
     function renderSocialLinks(){
         return (
-            Object.keys(SOCIAL_LINKS).map((el, SOCIAL_LINK) => (
+            <>
                 <a
-                    href={SOCIAL_LINKS[el]}
-                    key={el}
+                    href={SOCIAL_LINKS["linkedin"]}
+                    key="linkedin"
                     className="link hover:opacity-80 duration-300 md:mr-4 mr-2"
                     rel="noreferrer"
                     target="_blank"
                 >
-                    <img src={`/img/socials/${el}.svg`} alt={el} width={40} height={40} />
+                    <img src={Linkedin} alt="linkedin" width={40} height={40} />
                 </a>
-            ))
+                <a
+                    href={SOCIAL_LINKS["github"]}
+                    key="github"
+                    className="link hover:opacity-80 duration-300 md:mr-4 mr-2"
+                    rel="noreferrer"
+                    target="_blank"
+                >
+                    <img src={Github} alt="github" width={40} height={40} />
+                </a>
+                <a
+                    href={SOCIAL_LINKS["instagram"]}
+                    key="instagram"
+                    className="link hover:opacity-80 duration-300 md:mr-4 mr-2"
+                    rel="noreferrer"
+                    target="_blank"
+                >
+                    <img src={Instagram} alt="instagram" width={40} height={40} />
+                </a>
+                <a
+                    href={SOCIAL_LINKS["facebook"]}
+                    key="facebook"
+                    className="link hover:opacity-80 duration-300 md:mr-4 mr-2"
+                    rel="noreferrer"
+                    target="_blank"
+                >
+                    <img src={Facebook} alt="facebook" width={40} height={40} />
+                </a>
+                <a
+                    href={SOCIAL_LINKS["twitter"]}
+                    key="twitter"
+                    className="link hover:opacity-80 duration-300 md:mr-4 mr-2"
+                    rel="noreferrer"
+                    target="_blank"
+                >
+                    <img src={Twitter} alt="twitter" width={40} height={40} />
+                </a>
+            </>
         );
     }
 
