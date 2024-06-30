@@ -22,28 +22,6 @@ function App() {
         <main className='flex-col flex'>
           <Title/>
           <Description/>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <Project/>
           <br />
           <br />

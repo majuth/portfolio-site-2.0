@@ -1,6 +1,31 @@
+import React, {useRef, useState} from "react";
+
 function Project() {
-    return <section className="section-container">
-        <h2 id="projects">Project <table><tr><td>project 1</td><td>project 2</td><td>project 3</td><td>project 4</td></tr></table></h2>;
+    const sectionTitleRef = React.useRef(null);
+    const targetSection = React.useRef(null);
+
+    const [willChange, setwillChange] = useState(false);
+
+    function renderProjectTitle(){
+        return <div
+            className={`flex flex-col inner-container  ${
+            willChange ? "will-change-transform" : ""
+            }`}
+            ref={sectionTitleRef}
+        >
+            <p className="uppercase tracking-widest text-gray-200 text-sm seq">PROJECTS</p>
+            <h1 className="text-5xl text-4xl font-bold text-gradient w-fit seq mt-2">My Works</h1>
+            <h2 className="text-2xl md:max-w-3xl w-full seq max-w-sm mt-2">
+            I have contributed in over 10+ projects over various fields of development, including personal and school projects.
+            </h2>
+        </div>
+    }
+
+    return <section
+    ref={targetSection}
+    className="w-full relative select-none section-container flex-col flex py-8 justify-center"
+    >
+        {renderProjectTitle()}
     </section>
 }
 

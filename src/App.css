@@ -115,4 +115,8 @@ html {
     }
 }
 
-.title{}
+.text-gradient {
+    background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
