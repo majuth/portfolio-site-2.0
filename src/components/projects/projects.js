@@ -51,15 +51,6 @@ function Projects() {
             <h2 className="text-2xl md:max-w-3xl w-full seq max-w-sm mt-2">
             I have contributed in over 10+ projects over various fields of development, including personal and school projects.
             </h2>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
         </div>
     }
 
@@ -69,6 +60,7 @@ function Projects() {
     id={"projects"}
     >
         {renderProjectTitle()}
+        <div className="tall:mt-12 mt-6 grid grid-flow-col auto-cols-max md:gap-10 gap-6 project-wrapper w-fit seq snap-x scroll-pl-6 snap-mandatory">
         {ProjectsList.map((project) => (
         <ProjectTile
             project={project}
@@ -76,8 +68,7 @@ function Projects() {
             animationEnabled={true}
         ></ProjectTile>
         ))}
-        
-        
+        </div>
     </section>
 }
 

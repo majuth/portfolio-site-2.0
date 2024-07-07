@@ -15,6 +15,7 @@ function ProjectTile(project, animationEnabled) {
             "max-glare": 0.2,
             gyroscope: false,
         });
+
     }, [projectCard]);
 
     function renderTechIcons(techStack){
