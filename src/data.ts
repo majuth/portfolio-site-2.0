@@ -39,3 +39,52 @@ export const SOCIAL_LINKS = {
   facebook: "https://www.facebook.com/majuth.kirakalaprathapan/",
   twitter: "https://twitter.com/majuthkira",
 }
+
+export interface Project {
+  name: string;
+  image: string;
+  blurImage: string;
+  description: string;
+  gradient: [string, string];
+  url: string;
+  tech: string[];
+}
+
+export const PROJECTS: Project[] = [
+  {
+    name: "FigGen - Figma to Code converter",
+    image: "images/projects/figgen.jpg",
+    blurImage: "images/projects/blur/figgen-blur.jpg",
+    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
+    gradient: ["#1F6582", "#1ABCFE"],
+    url: "https://www.figma.com/community/plugin/1065278044402066626",
+    tech: ["typescript", "react", "tailwind"],
+  },
+  {
+    name: "FigGen - Figma to Code converter",
+    image: "images/projects/figgen.jpg",
+    blurImage: "images/projects/blur/figgen-blur.jpg",
+    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
+    gradient: ["#1F6582", "#1ABCFE"],
+    url: "https://www.figma.com/community/plugin/1065278044402066626",
+    tech: ["typescript", "react", "tailwind"],
+  },
+  {
+    name: "FigGen - Figma to Code converter",
+    image: "images/projects/figgen.jpg",
+    blurImage: "images/projects/blur/figgen-blur.jpg",
+    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
+    gradient: ["#1F6582", "#1ABCFE"],
+    url: "https://www.figma.com/community/plugin/1065278044402066626",
+    tech: ["typescript", "react", "tailwind"],
+  },
+  {
+    name: "FigGen - Figma to Code converter",
+    image: "images/projects/figgen.jpg",
+    blurImage: "images/projects/blur/figgen-blur.jpg",
+    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
+    gradient: ["#1F6582", "#1ABCFE"],
+    url: "https://www.figma.com/community/plugin/1065278044402066626",
+    tech: ["typescript", "react", "tailwind"],
+  }
+]

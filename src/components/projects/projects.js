@@ -1,7 +1,9 @@
 import React, {useEffect, useRef, useState} from "react";
 import { gsap, Linear, ScrollTrigger } from "gsap/all";
+import {PROJECTS as ProjectsList} from "../../data.ts";
+import ProjectTile from "../common/project-tile";
 
-function Project() {
+function Projects() {
     const sectionTitleRef = React.useRef(null);
     const targetSection = React.useRef(null);
 
@@ -67,7 +69,16 @@ function Project() {
     id={"projects"}
     >
         {renderProjectTitle()}
+        {ProjectsList.map((project) => (
+        <ProjectTile
+            project={project}
+            key={project.name}
+            animationEnabled={true}
+        ></ProjectTile>
+        ))}
+        
+        
     </section>
 }
 
-export default Project;
+export default Projects;

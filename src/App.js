@@ -4,7 +4,7 @@ import Education from './components/education/education';
 import Experience from './components/experience/experience';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
-import Project from './components/projects/projects';
+import Projects from './components/projects/projects';
 import Skills from './components/skills/skills';
 import Title from './components/title/title';
 import ProgressBar from './components/common/progress-bar';
@@ -22,7 +22,7 @@ function App() {
         <main className='flex-col flex'>
           <Title/>
           <Description/>
-          <Project/>
+          <Projects/>
           <br />
           <br />
           <br />
