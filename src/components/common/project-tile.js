@@ -5,22 +5,7 @@ import { Project as ProjectContext } from "../../data.ts"
 function ProjectTile(project, animationEnabled) {
     const projectCard = React.useRef(null);
 
-    //fix types for arrays not being casted and coming up as undefined
-    //is likely problem with data not being loaded in time before being seperated
-
-    // console.log(project)
-    const stop1 = "#000000"
-    const stop2 = "#ffffff"
-
-    const {
-        name,
-        tech,
-        image,
-        blurImage,
-        description,
-        // gradient: [stop1, stop2],
-        
-    } = project;
+    console.log(project)
 
     useEffect(() => {
         VanillaTilt.init(projectCard.current, {
@@ -33,7 +18,7 @@ function ProjectTile(project, animationEnabled) {
     }, [projectCard]);
 
     function renderTechIcons(techStack){
-        <div
+        return <div
           className={`
           techIcons w-1/2 h-full absolute left-24 top-0 sm:flex items-center hidden
         `}
@@ -55,7 +40,7 @@ function ProjectTile(project, animationEnabled) {
     };
 
     function renderDescription(description) {
-        <h2
+        return <h2
           className="text-lg z-10 tracking-wide font-medium"
           style={{ transform: "translateZ(0.8rem)" }}
         >
@@ -64,7 +49,7 @@ function ProjectTile(project, animationEnabled) {
     };
 
     function renderProjectName(name) {
-        <h1
+        return <h1
           className="text-2xl sm:text-3xl z-10 pl-2"
           style={{ transform: "translateZ(3rem)" }}
         >
@@ -73,7 +58,7 @@ function ProjectTile(project, animationEnabled) {
     };
 
     function renderTopBottomGradient(topGradient) {
-        <>
+        return <>
           <div
             className="absolute top-0 left-0 w-full h-20"
             style={{
@@ -90,7 +75,7 @@ function ProjectTile(project, animationEnabled) {
     };
     
     function renderProjectImage (image, blurImage, name) {
-        <img
+        return <img
           placeholder="blur"
           blurDataURL={blurImage}
           src={image}
@@ -120,20 +105,20 @@ function ProjectTile(project, animationEnabled) {
                 rounded-3xl relative p-6 flex-col flex justify-between max-w-full
                 `}
                 style={{
-                background: `linear-gradient(90deg, ${stop1} 0%, ${stop2} 100%)`,
+                background: `linear-gradient(90deg, ${project.gradient != undefined ? project.gradient[0]:null} 0%, ${project.gradient != undefined ? project.gradient[1]: null} 100%)`,
                 }}
             >
                 <img
-                src="/project-bg.svg"
+                src= {process.env.PUBLIC_URL +"/images/project-bg.svg"}
                 alt="Project"
                 layout="fill"
                 className="absolute w-full h-full top-0 left-0 opacity-20"
                 />
-                {renderProjectImage(image, blurImage, name)}
-                {/* {renderTopBottomGradient(stop1)} */}
-                {renderProjectName(name)}
-                {/* {renderTechIcons(techArray)} */}
-                {renderDescription(description)}
+                {renderProjectImage(project.image, project.blurImage, project.name)}
+                {renderTopBottomGradient(project.gradient != undefined ? project.gradient[0]: null)}
+                {renderProjectName(project.name)}
+                {renderTechIcons(project.tech != undefined? project.tech : [])}
+                {renderDescription(project.description)}
             </div>
         </a>
     );
