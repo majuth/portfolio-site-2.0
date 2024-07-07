@@ -54,6 +54,16 @@ function Projects() {
         </div>
     }
 
+    function renderProjectTiles(){
+        return ProjectsList.map((project) => (
+            <ProjectTile
+                project={project}
+                key={project.name}
+                animationEnabled={true}
+            ></ProjectTile>
+        ))
+    }
+
     return <section
     ref={targetSection}
     className="w-full relative select-none section-container flex-col flex py-8 justify-center"
@@ -61,13 +71,7 @@ function Projects() {
     >
         {renderProjectTitle()}
         <div className="tall:mt-12 mt-6 grid grid-flow-col auto-cols-max md:gap-10 gap-6 project-wrapper w-fit seq snap-x scroll-pl-6 snap-mandatory">
-        {ProjectsList.map((project) => (
-        <ProjectTile
-            project={project}
-            key={project.name}
-            animationEnabled={true}
-        ></ProjectTile>
-        ))}
+        {renderProjectTiles()}
         </div>
     </section>
 }
