@@ -31,7 +31,7 @@ function Menu({isMenuOpen, setIsMenuOpen}) {
             <li className='text-gradient-transition'>
               <a
                   className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
-                  href={`javascript:void(0)`}
+                  style={{cursor: "pointer"}}
                   onClick={setIsMenuOpen.bind(null, false)}
                   >
                     x
