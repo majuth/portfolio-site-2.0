@@ -28,7 +28,7 @@ function ProjectTile(project, animationEnabled) {
                 {techStack.map((currentTech, i) => (
                 <div className={`${i % 2 === 0 && "ml-16"} mb-4`} key={currentTech}>
                     <img
-                    src={`/projects/tech/${currentTech}.svg`}
+                    src={process.env.PUBLIC_URL + `/images/projects/tech/${currentTech}.svg`}
                     alt={currentTech}
                     height={45}
                     objectFit="contain"
