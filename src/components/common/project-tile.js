@@ -28,7 +28,6 @@ function ProjectTile(props) {
                     src={process.env.PUBLIC_URL + `/images/projects/tech/${currentTech}.svg`}
                     alt={currentTech}
                     height={45}
-                    objectFit="contain"
                     width={45}
                     />
                 </div>
