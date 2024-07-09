@@ -122,6 +122,7 @@ html {
 }
 
 .ProjectTile {
+
     height: 22rem;
     width: 38rem;
     background: black;
@@ -141,14 +142,32 @@ html {
     @apply absolute top-0 rounded-xl shadow-xl;
 
     width: 16.8rem !important;
-    transform: rotate(-22.5deg);
-    height: unset !important;
+    transform: rotate(-22.5deg) translateY(-10%);
+    height: 30rem !important;
     min-width: unset !important;
     max-height: unset !important;
     object-fit: contain !important;
     left: unset !important;
     right: 2rem !important;
     bottom: unset !important;
+}
+
+.projectSpan {
+    box-sizing:border-box;
+    display:block;
+    overflow:hidden;
+    width:initial;
+    height:initial;
+    background:none;
+    opacity:1;
+    border:0;
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
 }
 
 .techIcons {

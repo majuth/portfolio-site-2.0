@@ -75,15 +75,15 @@ function ProjectTile(project, animationEnabled) {
         </>
     };
     
-    function renderProjectImage (image, blurImage, name) {
-        return <img
-          placeholder="blur"
-          blurDataURL={blurImage}
-          src={image}
+    function renderProjectImage (image, name) {
+        return <span className="projectSpan">
+        <img
+          src={process.env.PUBLIC_URL + image}
           alt={name}
           layout="fill"
           className={`ProjectImg z-0`}
         />
+        </span>
     };
 
     return(
@@ -115,7 +115,7 @@ function ProjectTile(project, animationEnabled) {
                 layout="fill"
                 className="absolute w-full h-full top-0 left-0 opacity-20"
                 />
-                {renderProjectImage(project.image, project.blurImage, project.name)}
+                {renderProjectImage(project.image, project.name)}
                 {renderTopBottomGradient(project.gradient != undefined ? project.gradient[0]: null)}
                 {renderProjectName(project.name)}
                 {renderTechIcons(project.tech != undefined? project.tech : [])}
