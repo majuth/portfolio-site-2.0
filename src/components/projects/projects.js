@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import { gsap, Linear, ScrollTrigger } from "gsap/all";
 import {PROJECTS as ProjectsList} from "../../data.ts";
 import ProjectTile from "../common/project-tile";
@@ -57,8 +57,13 @@ function Projects() {
     function renderProjectTiles(){
         return ProjectsList.map((project) => (
             <ProjectTile
-                project={project}
+                name={project.name}
+                image={project.image}
                 key={project.name}
+                description={project.description}
+                gradient={project.gradient}
+                url={project.url}
+                tech={project.tech}
                 animationEnabled={true}
             ></ProjectTile>
         ))
@@ -71,7 +76,7 @@ function Projects() {
     >
         {renderProjectTitle()}
         <div className="tall:mt-12 mt-6 grid grid-flow-col auto-cols-max md:gap-10 gap-6 project-wrapper w-fit seq snap-x scroll-pl-6 snap-mandatory">
-        {renderProjectTiles()}
+            {renderProjectTiles()}
         </div>
     </section>
 }

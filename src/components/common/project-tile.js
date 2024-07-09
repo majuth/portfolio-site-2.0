@@ -1,11 +1,8 @@
-import React , {useContext, useEffect, useRef, useState} from "react";
+import React , {useEffect} from "react";
 import VanillaTilt from "vanilla-tilt";
-import { Project as ProjectContext } from "../../data.ts"
 
-function ProjectTile(project, animationEnabled) {
+function ProjectTile(props) {
     const projectCard = React.useRef(null);
-
-    console.log(project)
 
     useEffect(() => {
         VanillaTilt.init(projectCard.current, {
@@ -88,12 +85,12 @@ function ProjectTile(project, animationEnabled) {
 
     return(
         <a
-            href={project.url}
+            href={props.url}
             target="_blank"
             rel="noreferrer"
             className="link overflow-hidden rounded-3xl snap-start"
             style={{
-                maxWidth: animationEnabled
+                maxWidth: props.animationEnabled
                 ? "calc(100vw - 2rem)"
                 : "calc(100vw - 4rem)",
                 flex: "1 0 auto",
@@ -106,7 +103,7 @@ function ProjectTile(project, animationEnabled) {
                 rounded-3xl relative p-6 flex-col flex justify-between max-w-full
                 `}
                 style={{
-                background: `linear-gradient(90deg, ${project.gradient != undefined ? project.gradient[0]:null} 0%, ${project.gradient != undefined ? project.gradient[1]: null} 100%)`,
+                background: `linear-gradient(90deg, ${props.gradient[0]} 0%, ${props.gradient[1]} 100%)`,
                 }}
             >
                 <img
@@ -115,11 +112,11 @@ function ProjectTile(project, animationEnabled) {
                 layout="fill"
                 className="absolute w-full h-full top-0 left-0 opacity-20"
                 />
-                {renderProjectImage(project.image, project.name)}
-                {renderTopBottomGradient(project.gradient != undefined ? project.gradient[0]: null)}
-                {renderProjectName(project.name)}
-                {renderTechIcons(project.tech != undefined? project.tech : [])}
-                {renderDescription(project.description)}
+                {renderProjectImage(props.image, props.name)}
+                {renderTopBottomGradient(props.gradient[0])}
+                {renderProjectName(props.name)}
+                {renderTechIcons(props.tech)}
+                {renderDescription(props.description)}
             </div>
         </a>
     );
