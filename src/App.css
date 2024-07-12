@@ -24,6 +24,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     /* @apply bg-slate-950; */
     @apply bg-gray-900;
     /*CHANGE THIS STUFF TO IN COMPONENT STYLING*/

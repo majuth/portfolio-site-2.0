@@ -32,10 +32,45 @@ function Projects() {
         return [revealTimeline, ScrollTriggerInstance];
     }
 
+    function initProjectsAnimation(targetSection, sectionTitleRef){
+        const timeline = gsap.timeline({
+            defaults: { ease: Linear.easeNone } 
+        });
+        
+        const sidePadding = document.body.clientWidth - targetSection.current.querySelector(".inner-container").clientWidth;
+        const elementWidth = sidePadding + targetSection.current.querySelector(".project-wrapper").clientWidth;
+        targetSection.current.style.width = `${elementWidth}px`;
+    
+        const width = window.innerWidth - elementWidth;
+        const duration = `${(elementWidth / window.innerHeight) * 100}%`;
+        timeline
+            .to(targetSection.current, { x: width })
+            .to(sectionTitleRef.current, { x: -width }, "<div");
+
+        const ScrollTriggerInstance = ScrollTrigger.create({
+            trigger: targetSection.current,
+            start: "top top",
+            end: duration,
+            scrub: 0,
+            pin: true,
+            animation: timeline,
+            pinSpacing: "margin",
+            onToggle: (self) => setwillChange(self.isActive),
+        });
+
+    return [timeline, ScrollTriggerInstance];
+    }
+
     useEffect(() =>{
         const [revealTimelineInstance, initRevealTriggerInstance] = initRevealAnimation(targetSection);
 
         return initRevealTriggerInstance.kill;
+    }, [targetSection]);
+
+    useEffect(() =>{
+        const [projectsTimeline, projectsScrollTriggerInstance] = initProjectsAnimation(targetSection, sectionTitleRef);
+
+        return projectsScrollTriggerInstance.kill;
     }, [targetSection]);
 
 
