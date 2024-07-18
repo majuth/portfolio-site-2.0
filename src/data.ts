@@ -4,12 +4,12 @@ export const MENU = [
       ref: "home",
     },
     {
-      name: "Projects",
-      ref: "projects",
-    },
-    {
       name: "Education",
       ref: "education",
+    },
+    {
+      name: "Projects",
+      ref: "projects",
     },
     {
       name: "Skills",
