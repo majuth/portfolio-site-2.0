@@ -1,6 +1,5 @@
 import './App.css';
 import Description from './components/description/description';
-import Education from './components/education/education';
 import Experience from './components/experience/experience';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
@@ -23,51 +22,6 @@ function App() {
           <Title/>
           <Description/>
           <Projects/>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <Education/>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <Skills/>
           <br />
           <br />
