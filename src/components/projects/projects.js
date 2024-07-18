@@ -106,7 +106,7 @@ function Projects() {
 
     return <section
     ref={targetSection}
-    className="w-full relative select-none section-container flex-col flex py-8 justify-center"
+    className="w-full relative select-none section-container flex-col flex py-16 justify-center"
     id={"projects"}
     >
         {renderProjectTitle()}
