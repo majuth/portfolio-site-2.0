@@ -7,6 +7,7 @@ import Projects from './components/projects/projects';
 import Skills from './components/skills/skills';
 import Title from './components/title/title';
 import ProgressBar from './components/common/progress-bar';
+import Quote from './components/common/quote';
 import { gsap, ScrollTrigger } from 'gsap/all';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Title/>
           <Description/>
           <Projects/>
+          <Quote />
           <Skills/>
           <br />
           <br />
