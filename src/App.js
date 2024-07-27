@@ -8,6 +8,7 @@ import Skills from './components/skills/skills';
 import Title from './components/title/title';
 import ProgressBar from './components/common/progress-bar';
 import Quote from './components/common/quote';
+import Question from './components/common/question';
 import { gsap, ScrollTrigger } from 'gsap/all';
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
           <br />
           <br />
           <br />
+          <Question />
           <Footer/>
           <br />
           <br />
