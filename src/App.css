@@ -187,4 +187,42 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-  
+
+footer {
+    background: url("./img/footer-bg.svg"),
+        linear-gradient(
+        153.86deg,
+        #02494c 0%,
+        #016877 15.69%,
+        #0d576d 48.9%,
+        #004865 95.52%
+        );
+}
+
+.primary-button {
+    @apply text-gray-900 py-2 px-7 font-medium rounded text-base md:text-xl tracking-wide  duration-300 flex items-center;
+
+    background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 50%, #2193b0 100%),
+        linear-gradient(0deg, #ffffff, #ffffff);
+    background-size: 200% 100%;
+
+    &:hover {
+        background-position: 100% 0;
+    }
+}
+
+.outline-button {
+    @apply border-white border-2 py-2 px-7 font-medium rounded text-base md:text-xl tracking-wide  duration-300 flex items-center;
+
+    &:hover {
+        @apply bg-white text-gray-900 opacity-90;
+    }
+}
+
+.white-button {
+    @apply bg-white text-gray-900 py-2 px-7 font-medium rounded text-base md:text-xl tracking-wide  duration-300 flex items-center;
+
+    &:hover {
+        @apply opacity-90;
+    }
+}
