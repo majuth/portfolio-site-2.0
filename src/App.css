@@ -226,3 +226,16 @@ footer {
         @apply opacity-90;
     }
 }
+
+.section-heading {
+    @apply md:text-5xl text-4xl font-bold text-gradient w-fit;
+}
+
+.section-title-sm {
+    @apply uppercase tracking-widest text-gray-200 text-sm;
+}
+
+.skill {
+    padding-right: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+}

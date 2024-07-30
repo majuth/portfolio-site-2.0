@@ -83,3 +83,15 @@ export const PROJECTS: Project[] = [
     tech: ["typescript", "react", "tailwind"],
   }
 ]
+
+export const SKILLS = {
+  programmingLanguages: [
+    "javascript",
+    "gsap",
+    "tailwind",
+    "html",
+    "css",
+  ],
+  frameworksDatabases: ["react", "angular",],
+  tools: ["git",],
+};
