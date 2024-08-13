@@ -95,3 +95,42 @@ export const SKILLS = {
   frameworksDatabases: ["react", "angular",],
   tools: ["git",],
 };
+
+export enum ItemSize {
+  SMALL = "small",
+  LARGE = "large",
+}
+
+export interface TimelineNode {
+  title: string;
+  subtitle?: string;
+  size: ItemSize;
+  shouldDrawLine: boolean;
+}
+
+export const TIMELINE: Array<TimelineNode> = [
+  {
+    title: "2023",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+  },
+  {
+    title: "Speaker at React ",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Discussed on Interaction to Next Paint (INP), a Google Core Web Vital metric",
+    shouldDrawLine: true,
+  },
+  {
+    title: "2022",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+  },
+  {
+    title: "Frontend Engineer 2 (Current)",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Frontend Engineering around Livingroom device performance",
+    shouldDrawLine: true,
+  }
+]
