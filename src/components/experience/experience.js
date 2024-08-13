@@ -1,7 +1,16 @@
 import React, {useEffect, useState} from "react";
 import { gsap, Linear, ScrollTrigger } from "gsap/all";
+import {TIMELINE, ItemSize, TimelineNode} from "../../data.ts";
 
 function Experience() {
+    const svgColor = "#9CA3AF";
+    const animColor = "#FCD34D";
+    const separation = 450;
+    const strokeWidth = 2;
+    const leftBranchX = 13;
+    const curveLength = 150;
+    const dotSize = 26;
+
     function renderSectionTitle(){
         return <div className="flex flex-col">
             <p className="section-title-sm seq">WORK</p>
