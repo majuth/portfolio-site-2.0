@@ -26,28 +26,6 @@ function App() {
           <Projects/>
           <Quote />
           <Skills/>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <Experience/>
           <Question />
           <Footer/>
