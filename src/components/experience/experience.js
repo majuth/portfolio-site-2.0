@@ -50,7 +50,6 @@ function Experience() {
             }
 
             if (shouldDrawLine) {
-              // TO DO fix syntax
               svg = shouldDrawLine
                 ? `${drawLine(lineY, index)}${svg}`
                 : svg;
@@ -87,7 +86,8 @@ function Experience() {
       const offset = 10;
       const foreignObjectX = dotSize / 2 + 10 + offset;
       const foreignObjectY = y - dotSize / 2;
-      const foreignObjectWidth = svgWidth - (dotSize / 2 + 10 + offset);
+      // const foreignObjectWidth = svgWidth - (dotSize / 2 + 10 + offset);
+      const foreignObjectWidth = svgWidth
       const titleSizeClass = "text-6xl";
 
       const logoString = image
@@ -112,9 +112,59 @@ function Experience() {
       return str;
     }
 
+    function addLineSvgAnimation(timeline, duration, index){
+      const startTime = `start+=${duration * index}`;
+
+      timeline.fromTo(
+        svgContainer.current.querySelectorAll(`.line-${index + 1}`),
+        {scaleY: 0},
+        {scaleY: 1, duration },
+        startTime
+      );
+  
+      return timeline;
+    }
+
+    function animateTimeline(timeline, duration){
+      let index = 0;
+
+      addNodeRefsToItems(TIMELINE).forEach((item) => {
+        if (item.shouldDrawLine) {
+          addLineSvgAnimation(timeline, duration, index);
+          index++;
+        }
+      });
+    }
+
+    function initScrollTrigger() {
+      const timeline = gsap
+      .timeline({ defaults: { ease: Linear.easeNone, duration: 0.44 } })
+      .addLabel("start");
+
+      let duration = 3;
+      let trigger = svgContainer.current;
+      let start = "top center";
+      let end = `+=${svgLength}`;
+      let additionalConfig = {};
+
+      ScrollTrigger.create({
+        ...additionalConfig,
+        trigger,
+        start,
+        end,
+        scrub: 0,
+        animation: timeline,
+      });
+      return { timeline, duration };
+    }
+
     useEffect(() =>{
       setTimelineSvg(svgContainer, timelineSvg)
-    }, [timelineSvg]);
+
+      const { timeline, duration } = initScrollTrigger();
+
+      animateTimeline(timeline, duration);
+    }, [timelineSvg, svgContainer]);
 
     function setTimelineSvg(){
       const containerWidth = svgContainer.current.clientWidth;
