@@ -110,27 +110,41 @@ export interface TimelineNode {
 
 export const TIMELINE: Array<TimelineNode> = [
   {
-    title: "2023",
-    size: ItemSize.LARGE,
-    shouldDrawLine: false,
-  },
-  {
-    title: "Speaker at React ",
-    size: ItemSize.SMALL,
-    subtitle:
-      "Discussed on Interaction to Next Paint (INP), a Google Core Web Vital metric",
-    shouldDrawLine: true,
-  },
-  {
     title: "2022",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
   },
   {
-    title: "Frontend Engineer 2 (Current)",
+    title: "TD Bank - Software Engineer Intern ",
     size: ItemSize.SMALL,
     subtitle:
-      "Frontend Engineering around Livingroom device performance",
+      "Developed Banking App features for 5+ million Android users utilizing Kotlin, Java, XML and Android Studio",
+    shouldDrawLine: true,
+  },
+  {
+    title: "Ontario Ministry GCS - Software Developer Intern ",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Developed full-stack React website and implemented scalable UI/UX elements using Bootstrap and CSS",
+    shouldDrawLine: true,
+  },
+  {
+    title: "2020",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+  },
+  {
+    title: "Ontario Ministry GCS - Systems Developer Intern",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Consolidated various data into advanced statistics in Microsoft Power BI and maintained Powershell scripts",
+    shouldDrawLine: true,
+  },
+  {
+    title: "Ryerson CCS - Full Stack Developer Intern",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Created Javascript based Google Suite API scripts to add functionality to existing Google Suite Apps",
     shouldDrawLine: true,
   }
 ]
