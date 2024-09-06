@@ -51,36 +51,28 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    name: "FigGen - Figma to Code converter",
-    image: "/images/projects/figgen.jpg",
-    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
+    name: "Basketball Stats Site",
+    image: "/images/projects/basketballStatsSite.png",
+    description: "Statistics site that shows up to date NBA player and team stats.",
     gradient: ["#1F6582", "#1ABCFE"],
     url: "https://www.figma.com/community/plugin/1065278044402066626",
-    tech: ["typescript", "react", "tailwind"],
+    tech: ["angular", "typescript", "css"],
   },
   {
-    name: "FigGen - Figma to Code converter",
-    image: "/images/projects/figgen.jpg",
-    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
+    name: "Android Calculator App",
+    image: "/images/projects/calculatorApp.png",
+    description: "Simple calculator app that runs on Android platform.",
     gradient: ["#1F6582", "#1ABCFE"],
     url: "https://www.figma.com/community/plugin/1065278044402066626",
-    tech: ["typescript", "react", "tailwind"],
+    tech: [],
   },
   {
-    name: "FigGen - Figma to Code converter",
-    image: "/images/projects/figgen.jpg",
-    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
+    name: "Course Selection Site",
+    image: "/images/projects/courseSelectionSite.png",
+    description: "A course selection prototype site created for RUHacks 2021.",
     gradient: ["#1F6582", "#1ABCFE"],
     url: "https://www.figma.com/community/plugin/1065278044402066626",
-    tech: ["typescript", "react", "tailwind"],
-  },
-  {
-    name: "FigGen - Figma to Code converter",
-    image: "/images/projects/figgen.jpg",
-    description: "Pixel perfect HTML/Tailwind for Figma Auto layout designs.",
-    gradient: ["#1F6582", "#1ABCFE"],
-    url: "https://www.figma.com/community/plugin/1065278044402066626",
-    tech: ["typescript", "react", "tailwind"],
+    tech: ["react", "css", "javascript"],
   }
 ]
 
