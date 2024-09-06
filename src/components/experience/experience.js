@@ -87,7 +87,7 @@ function Experience() {
       const foreignObjectX = dotSize / 2 + 10 + offset;
       const foreignObjectY = y - dotSize / 2;
       // const foreignObjectWidth = svgWidth - (dotSize / 2 + 10 + offset);
-      const foreignObjectWidth = svgWidth
+      const foreignObjectWidth = "100%"
       const titleSizeClass = "text-6xl";
 
       const logoString = image
@@ -176,7 +176,7 @@ function Experience() {
 
     function renderSVG(){
         return <svg
-        width={svgWidth}
+        width={"100%"}
         height={svgLength}
         viewBox={`0 0 ${svgWidth} ${svgLength}`}
         fill="none"
