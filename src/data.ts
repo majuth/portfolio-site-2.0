@@ -55,7 +55,7 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/basketballStatsSite.png",
     description: "Statistics site that shows up to date NBA player and team stats.",
     gradient: ["#1F6582", "#1ABCFE"],
-    url: "https://www.figma.com/community/plugin/1065278044402066626",
+    url: "https://github.com/majuth/basketball-stats-site",
     tech: ["angular", "typescript", "css"],
   },
   {
@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/calculatorApp.png",
     description: "Simple calculator app that runs on Android platform.",
     gradient: ["#1F6582", "#1ABCFE"],
-    url: "https://www.figma.com/community/plugin/1065278044402066626",
+    url: "https://github.com/majuth/Calculator-App",
     tech: [],
   },
   {
@@ -71,7 +71,7 @@ export const PROJECTS: Project[] = [
     image: "/images/projects/courseSelectionSite.png",
     description: "A course selection prototype site created for RUHacks 2021.",
     gradient: ["#1F6582", "#1ABCFE"],
-    url: "https://www.figma.com/community/plugin/1065278044402066626",
+    url: "https://github.com/Ctrl-Alt-Defeat-RUHacks/RUPrint",
     tech: ["react", "css", "javascript"],
   }
 ]
@@ -117,7 +117,7 @@ export const TIMELINE: Array<TimelineNode> = [
     title: "Ontario Ministry GCS - Software Developer Intern ",
     size: ItemSize.SMALL,
     subtitle:
-      "Developed full-stack React website and implemented scalable UI/UX elements using Bootstrap and CSS",
+      "Developed full-stack React website and implemented scalable UI/UX elements using Bootstrap",
     shouldDrawLine: true,
   },
   {
@@ -136,7 +136,7 @@ export const TIMELINE: Array<TimelineNode> = [
     title: "Ryerson CCS - Full Stack Developer Intern",
     size: ItemSize.SMALL,
     subtitle:
-      "Created Javascript based Google Suite API scripts to add functionality to existing Google Suite Apps",
+      "Created Javascript based Google Suite API scripts to add functionality to existing G-Suite Apps",
     shouldDrawLine: true,
   }
 ]
