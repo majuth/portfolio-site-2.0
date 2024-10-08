@@ -98,6 +98,7 @@ export interface TimelineNode {
   subtitle?: string;
   size: ItemSize;
   shouldDrawLine: boolean;
+  image?: string;
 }
 
 export const TIMELINE: Array<TimelineNode> = [
@@ -107,18 +108,20 @@ export const TIMELINE: Array<TimelineNode> = [
     shouldDrawLine: false,
   },
   {
-    title: "TD Bank - Software Engineer Intern ",
+    title: "Software Engineer Intern ",
     size: ItemSize.SMALL,
     subtitle:
       "Developed Banking App features for 5+ million Android users utilizing Kotlin, Java, XML and Android Studio",
     shouldDrawLine: true,
+    image: "/images/experiences/TD.png"
   },
   {
-    title: "Ontario Ministry GCS - Software Developer Intern ",
+    title: "Software Developer Intern ",
     size: ItemSize.SMALL,
     subtitle:
       "Developed full-stack React website and implemented scalable UI/UX elements using Bootstrap",
     shouldDrawLine: true,
+    image: "/images/experiences/OPS.png"
   },
   {
     title: "2020",
@@ -126,17 +129,19 @@ export const TIMELINE: Array<TimelineNode> = [
     shouldDrawLine: false,
   },
   {
-    title: "Ontario Ministry GCS - Systems Developer Intern",
+    title: "Systems Developer Intern",
     size: ItemSize.SMALL,
     subtitle:
       "Consolidated various data into advanced statistics in Microsoft Power BI and maintained Powershell scripts",
     shouldDrawLine: true,
+    image: "/images/experiences/OPS.png"
   },
   {
-    title: "Ryerson CCS - Full Stack Developer Intern",
+    title: "Full Stack Developer Intern",
     size: ItemSize.SMALL,
     subtitle:
       "Created Javascript based Google Suite API scripts to add functionality to existing G-Suite Apps",
     shouldDrawLine: true,
+    image: "/images/experiences/ryerson.png"
   }
 ]

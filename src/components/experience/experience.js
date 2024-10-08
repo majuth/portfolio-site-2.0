@@ -91,7 +91,7 @@ function Experience() {
       const titleSizeClass = "text-6xl";
 
       const logoString = image
-      ? `<img src='${image}' class='h-8 mb-2' loading='lazy' width='100' height='32' alt='${image}' />`
+      ? `<img src='${process.env.PUBLIC_URL + image}' class='h-12 mb-2' loading='lazy' alt='${image}' />`
       : "";
       const subtitleString = subtitle
       ? `<p class='text-xl mt-2 text-gray-200 font-medium tracking-wide'>${subtitle}</p>`
