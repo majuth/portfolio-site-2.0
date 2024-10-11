@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
     description: "Simple calculator app that runs on Android platform.",
     gradient: ["#1F6582", "#1ABCFE"],
     url: "https://github.com/majuth/Calculator-App",
-    tech: [],
+    tech: ["kotlin", "java", "xml"],
   },
   {
     name: "Course Selection Site",
