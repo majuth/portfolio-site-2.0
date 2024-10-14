@@ -62,7 +62,7 @@ export const PROJECTS: Project[] = [
     name: "Android Calculator App",
     image: "/images/projects/calculatorApp.png",
     description: "Simple calculator app that runs on Android platform.",
-    gradient: ["#1F6582", "#1ABCFE"],
+    gradient: ["#153BB9", "#0E2C8B"],
     url: "https://github.com/majuth/Calculator-App",
     tech: ["kotlin", "java", "xml"],
   },
@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
     name: "Course Selection Site",
     image: "/images/projects/courseSelectionSite.png",
     description: "A course selection prototype site created for RUHacks 2021.",
-    gradient: ["#1F6582", "#1ABCFE"],
+    gradient: ["#245B57", "#004741"],
     url: "https://github.com/Ctrl-Alt-Defeat-RUHacks/RUPrint",
     tech: ["react", "css", "javascript"],
   }
@@ -79,13 +79,15 @@ export const PROJECTS: Project[] = [
 export const SKILLS = {
   programmingLanguages: [
     "javascript",
-    "gsap",
-    "tailwind",
+    "java",
+    "typescript",
     "html",
     "css",
+    "tailwind",
+    "gsap",
   ],
   frameworksDatabases: ["react", "angular",],
-  tools: ["git",],
+  tools: ["git", "figma"],
 };
 
 export enum ItemSize {
