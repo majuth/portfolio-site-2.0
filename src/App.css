@@ -24,7 +24,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* @apply bg-slate-950; */
     @apply bg-gray-900;
     /*CHANGE THIS STUFF TO IN COMPONENT STYLING*/
@@ -46,6 +46,10 @@ html {
     @media (min-width: 2000px) {
     font-size: 22px;
     }
+}
+
+#root{
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
