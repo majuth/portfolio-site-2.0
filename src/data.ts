@@ -78,16 +78,21 @@ export const PROJECTS: Project[] = [
 
 export const SKILLS = {
   programmingLanguages: [
-    "javascript",
+    "python",
     "java",
     "typescript",
+    "javascript",
     "html",
     "css",
-    "tailwind",
-    "gsap",
+    "sql",
+    "kotlin",
+    "c",
+    "c++",
+    "shell",
+    "php",
   ],
-  frameworksDatabases: ["react", "angular",],
-  tools: ["git", "figma"],
+  frameworksDatabases: ["react", "angular", "nodejs", "bootstrap", "mysql","firebase",],
+  tools: ["git", "vscode", "figma",],
 };
 
 export enum ItemSize {
