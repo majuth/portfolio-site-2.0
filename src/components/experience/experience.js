@@ -37,7 +37,7 @@ function Experience() {
         const timelineSvg = addNodeRefsToItems(timeline).reduce(
           //fix svg rendering
           (svg, node) => {
-            const { next, shouldDrawLine } = node;
+            const { next, shouldDrawLine, size } = node;
             let lineY = y;
             let dotY = y + separation / 2;
 
@@ -49,11 +49,19 @@ function Experience() {
               dotY = y;
             }
 
-            if (shouldDrawLine) {
+            if (shouldDrawLine && size==ItemSize.SMALL) {
               svg = shouldDrawLine
                 ? `${drawLine(lineY, index)}${svg}`
                 : svg;
               y = y + separation;
+              index++;
+            }
+
+            if (shouldDrawLine && size==ItemSize.LARGE) {
+              svg = shouldDrawLine
+                ? `${drawLine(lineY, index)}${svg}`
+                : svg;
+              y = y + (separation /2);
               index++;
             }
 

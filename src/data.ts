@@ -133,7 +133,7 @@ export const TIMELINE: Array<TimelineNode> = [
   {
     title: "2020",
     size: ItemSize.LARGE,
-    shouldDrawLine: false,
+    shouldDrawLine: true,
   },
   {
     title: "Systems Developer Intern",
