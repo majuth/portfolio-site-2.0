@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6dae496.css",
-    "main.js": "/static/js/main.47e525d4.js",
+    "main.css": "/static/css/main.7e405e62.css",
+    "main.js": "/static/js/main.f71250ef.js",
     "static/media/headshot.jpg": "/static/media/headshot.eb7a0d250685caea1f68.jpg",
     "static/media/GoogleSans-Medium.woff": "/static/media/GoogleSans-Medium.20a76f9128def8ff6c4e.woff",
     "static/media/GoogleSans-Bold.woff": "/static/media/GoogleSans-Bold.3b37e86bcf143949bbb7.woff",
@@ -13,11 +13,11 @@
     "static/media/pattern-l.svg": "/static/media/pattern-l.f35ecf0507b5523bd6eef65b8178658b.svg",
     "index.html": "/index.html",
     "static/media/burger-menu.svg": "/static/media/burger-menu.d653d1bd2c4f88dc0991bac42f629477.svg",
-    "main.f6dae496.css.map": "/static/css/main.f6dae496.css.map",
-    "main.47e525d4.js.map": "/static/js/main.47e525d4.js.map"
+    "main.7e405e62.css.map": "/static/css/main.7e405e62.css.map",
+    "main.f71250ef.js.map": "/static/js/main.f71250ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6dae496.css",
-    "static/js/main.47e525d4.js"
+    "static/css/main.7e405e62.css",
+    "static/js/main.f71250ef.js"
   ]
 }

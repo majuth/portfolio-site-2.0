@@ -1,0 +1,27 @@
+<svg width="800px" height="800px" viewBox="-18.513 -29.399 340.906 430.906" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:export>
+      <bx:file format="svg"></bx:file>
+    </bx:export>
+    <bx:grid x="-62.154" y="-27.805" width="142.526" height="142.526"></bx:grid>
+    <path id="C" d="M29.589 79.999H30c16.568 0 30-4.892 30-10.929v-58.14H29.589v69.07z"></path>
+    <linearGradient id="a" x1="73.714" y1="910.226" x2="105.452" y2="878.134" gradientTransform="matrix(8.816021, 0, 0, 8.816021, -629.667697, -7695.310808)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0296d8"></stop>
+      <stop offset="1" stop-color="#8371d9"></stop>
+    </linearGradient>
+    <linearGradient id="b" x1="69.813" y1="905.226" x2="102.279" y2="875.745" gradientTransform="matrix(8.816021, 0, 0, 8.816021, -629.667697, -7695.310808)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cb55c0"></stop>
+      <stop offset="1" stop-color="#f28e0e"></stop>
+    </linearGradient>
+  </defs>
+  <svg width="430" height="430" viewBox="0 0 70 70" x="-62.513" y="-29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="70" height="70" rx="10" style="fill: rgb(66, 30, 54);"></rect>
+    <path d="M94.8573 -15.5184C94.8573 -15.5184 68.4787 -2.95593 73.1606 28.1212C78.4135 62.967 47.9525 77.9223 27.1408 69.308C6.32911 60.6639 7.78508 28.6895 -31.7828 27.7024C-72.2071 26.7154 -80.7145 -13.5443 -80.7145 -13.5443" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-miterlimit="10"></path>
+    <path d="M64.3677 -24.8806C64.3677 -24.8806 52.9484 1.68004 57.0308 28.0911C61.1418 54.5021 42.671 57.6128 35.3341 54.5021C20.0894 48.1013 17.1489 13.8237 -7.4597 11.6103C-25.959 9.93536 -50.8531 23.1857 -64.0424 -6.87439" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-miterlimit="10"></path>
+    <path d="M52.0634 -13.0358C52.0634 -13.0358 56.1743 14.0931 37.9891 9.24758C17.1489 3.68422 17.4629 -9.35679 -8.91565 2.96636C-18.308 7.36322 -56.1059 8.64937 -48.4835 -15.5184" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-miterlimit="10"></path>
+    <path d="M38.8741 45.1403C43.2415 45.1403 46.782 39.6766 46.782 32.9368C46.782 26.197 43.2415 20.7333 38.8741 20.7333C34.5067 20.7333 30.9663 26.197 30.9663 32.9368C30.9663 39.6766 34.5067 45.1403 38.8741 45.1403Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-miterlimit="10"></path>
+  </svg>
+  <title>file_type_kotlin</title>
+  <path d="M 23.28 50.108 L 23.28 326.534 L 299.706 326.534 L 299.706 326.07 L 231.093 256.963 L 162.48 187.788 L 231.093 118.563 L 299.094 50.108 L 23.28 50.108 Z" style="fill: url(#a);"></path>
+  <path d="M 164.632 50.108 L 23.28 191.46 L 23.28 326.534 L 24.504 326.534 L 162.797 188.242 L 162.49 187.936 L 231.093 118.721 L 299.094 50.108 L 164.632 50.108 Z" style="fill: url(#b);"></path>
+</svg>
