@@ -97,7 +97,15 @@ function Description() {
     }
 
     function renderHeadshot(){
-        return <img src={headShot} className="headshot rounded-full md:w-3/4 w-full scale-125 sm:scale-100 flex" id="headPic" ref={headShotRef} style={{maxHeight: "200px", maxWidth: "200px"}} alt={"Majuth Kira Headshot"} width={100} height={100} />
+        return <img src={headShot} className="headshot rounded-full md:w-3/4 w-full scale-125 sm:scale-100 flex" ref={headShotRef} style={{
+                maxHeight: "200px", 
+                maxWidth: "200px",
+                display: isSmallScreen? "block" : "",
+                marginRight: isSmallScreen? "auto" : "",
+                marginLeft: isSmallScreen? "auto" : "",
+                width: isSmallScreen? "50" : "",
+                marginBottom: isSmallScreen? "5rem" : "",
+                }} alt={"Majuth Kira Headshot"} width={100} height={100} />
     }
 
     return <section className="tall:pt-20 tall:pb-16 pt-40 pb-24 w-full relative select-none section-container inline-grid grid-cols-5" ref={targetSection} id="education"> 
