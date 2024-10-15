@@ -9,6 +9,8 @@ function Description() {
     
     const [change, setChange] = useState(false);
 
+    const isSmallScreen = document.body.clientWidth < 767;
+
     function initDescrpAnimation(descrpRef, targetSection) {
         const timeline = gsap.timeline({
             defaults: {ease: Linear.easeNone, duration: 0.1}
@@ -69,16 +71,18 @@ function Description() {
     }, [descrpRef, targetSection]);
 
     useEffect(() =>{
+        if(!isSmallScreen){
         const headShotScrollTriggerInstance = initHeadshotAnimation(
             headShotRef,
             targetSection
         );
 
         return headShotScrollTriggerInstance.kill;
+        }
     }, [headShotRef, targetSection]);
 
     function renderDescription() {
-        return <h1 ref={descrpRef} className="font-medium text-3xl sm:text-4xl md:text-6xl">
+        return <h1 ref={descrpRef} className="font-medium text-3xl sm:text-4xl md:text-6xl sm: text-center md:text-left">
             <span 
                 className={`descrp-1 leading-tight`}
             >

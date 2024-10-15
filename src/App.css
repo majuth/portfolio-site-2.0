@@ -99,6 +99,16 @@ html {
     backdrop-filter: blur(0.625rem);
     -webkit-backdrop-filter: blur(0.625rem);
 }
+
+.headshot{
+    @media (max-width: 767px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-bottom: 5rem;
+      }
+}
  
 .text-gradient-transition:hover{
     a{
