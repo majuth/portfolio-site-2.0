@@ -110,9 +110,22 @@ export interface TimelineNode {
 
 export const TIMELINE: Array<TimelineNode> = [
   {
-    title: "2022",
+    title: "2025",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
+  },
+  {
+    title: "Software Engineer Intern ",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Improving API performance and reliability for 1+ million merchants using Ruby on Rails, GraphQL and REST APIs",
+    shouldDrawLine: true,
+    image: "/images/experiences/shopify.png"
+  },
+  {
+    title: "2022",
+    size: ItemSize.LARGE,
+    shouldDrawLine: true,
   },
   {
     title: "Software Engineer Intern ",
