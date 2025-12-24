@@ -115,10 +115,18 @@ export const TIMELINE: Array<TimelineNode> = [
     shouldDrawLine: false,
   },
   {
+    title: "Software Engineer",
+    size: ItemSize.SMALL,
+    subtitle:
+      "Improving products platform performance through API, Database, and System changes for 5+ million merchants.",
+    shouldDrawLine: true,
+    image: "/images/experiences/shopify.png"
+  },
+  {
     title: "Software Engineer Intern ",
     size: ItemSize.SMALL,
     subtitle:
-      "Improving API performance and reliability for 1+ million merchants using Ruby on Rails, GraphQL and REST APIs",
+      "Improving API performance and reliability for 5+ million merchants using Ruby on Rails, GraphQL and REST APIs",
     shouldDrawLine: true,
     image: "/images/experiences/shopify.png"
   },

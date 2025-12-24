@@ -86,7 +86,7 @@ function Description() {
             <span 
                 className={`descrp-1 leading-tight`}
             >
-                I am a recent grad from Toronto Metropolitan University's Computer Science Co-op program.{" "}
+                I am a Software Engineer at Shopify as part of the Products Platform Team.{" "}
             </span>
             <span
                 className={`descrp-2 leading-tight`}
